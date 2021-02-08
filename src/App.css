@@ -1,0 +1,8 @@
+body{
+  background-color: rgba(99, 47, 12, 0.474);
+  
+}
+
+div:focus{
+  outline: none !important;
+}

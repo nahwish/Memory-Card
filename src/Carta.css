@@ -1,0 +1,300 @@
+.tarjeta-wrap{
+  width: 125px;
+  height:115px;
+  /* perspective: 600; */
+  margin: 11px;
+  padding: 2px;
+  /* transform: rotateY(180deg); */
+ position: relative
+ 
+}
+.tarjeta{
+  
+  margin-top: 10px;
+ 
+  position: relative;
+  
+  /* transform-style: preserve-3d; */
+  transition:.7s ease;
+  
+  
+}
+.adelante{
+  width: 125px;
+  height: 153px;
+  
+   box-shadow: 0 0 0 1px #ACC21F,
+               0 0 0 2px rgb(240, 240, 240);
+  
+              
+   border-radius: 7px;
+   background:  url(./img/azul.png) ;
+   
+  
+  /*           x    y ,difuminado */
+  
+}
+.atras{
+  width: 125px;
+  height: 153px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #feffff;
+  /* transform: rotateY(180deg); */
+  box-shadow: 0 0 0 1px #ACC21F,
+            0 0 0 2px rgb(240, 240, 240);
+  border-radius: 7px;
+  
+  
+  
+  
+}
+
+
+
+
+#atr{
+width: 180px;
+height: 168px;
+position: absolute;
+bottom: -13px;
+right: -56px;
+color:rgba(253, 0, 0, 0.727);
+font-weight: bold;
+font-size: 30px;
+}
+#iconMagic{
+width: 60px;
+position: absolute;
+bottom: 19px;
+right: 9px;
+font-weight: bold;
+font-size: 38px;
+
+}
+.atrb{
+
+
+position: absolute;
+bottom: -148px;
+right: -158px;
+color:rgb(253, 0, 0);
+font-weight: bold;
+font-size: large;
+
+}
+.img{
+  width: 90px;
+  height: 140px;
+}
+
+
+
+
+
+
+
+
+.atr, .atras, .adelante{
+  backface-visibility: hidden;
+}
+/* .adelante{ */
+  /* transform: rotate(180deg); */
+/* } */
+/*  */
+ .atras, .adelante:hover{
+  transform: translateY(-20px)
+
+  }
+#card{
+  font-size: 60px;
+  padding: 35px 12px;
+  box-shadow: 0 0 0 2px #0d1b59dc;
+  background-color: rgb(29, 169, 162) ;
+  position: absolute;
+  border-radius: 7px;
+  box-shadow: 0 0 0 3px #ACC21F,
+              0 0 0 7px #2EAAF4,
+              0 0 0 10px #F0A500;
+              
+  
+ 
+}
+.fa-suse{color:rgba(255, 153, 0, 0.816)}
+.fa-snowman{color:rgba(254, 255, 253, 0.515)}
+.fa-octopus-deploy{color:rgba(179, 49, 255, 0.665)}
+.fa-ghost{color:rgb(194, 208, 243)}
+.fa-d-and-d{color:rgb(52, 32, 228)}
+.fa-robot{color:rgb(86, 54, 150);}
+.fa-sketch{color:rgba(0, 255, 157, 0.837);}
+.fa-fort-awesome{color:rgb(121, 50, 50);}
+.fa-poop{
+  color: rgb(105, 111, 0);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+  border:1px solid rgb(255, 253, 253);
+}
+.fa-grav{color:rgba(251, 255, 247, 0.761)}
+.fa-horse{
+  color:rgba(255, 0, 162, 0.693)
+}
+.fa-camera-retro{color:blue;}
+.fa-frog{color:rgb(48, 121, 5)}
+.fa-sticker-mule{color:rgb(85, 76, 4)}
+.fa-poo{
+  color: rgba(121, 112, 13, 0.987);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+.fa-radiation{color:rgba(128, 255, 0, 0.734)}
+.fa-radiation-alt{color:rgba(255, 247, 0, 0.672)}
+.fa-cannabis{
+  color: rgba(11, 221, 29, 0.761);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+.fa-skull-crossbones{color:rgb(192, 199, 186)}
+.fa-bomb{
+  color: rgba(255, 0, 0, 0.761);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+.fa-carrot{color:rgb(232, 144, 14);}
+.fa-pepper-hot{color:rgb(191, 17, 17);}
+
+.fa-star{color:rgba(0, 0, 0, 0.679);font-size: 20px!important;}
+
+.fa-apple-alt{color:rgb(28, 90, 22);}
+.fa-pills{
+  color: rgb(255, 122, 188);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+.fa-wine-glass-alt{
+  color: rgb(95, 37, 69);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+
+.fa-head-side-mask{
+  
+  color: rgb(12, 77, 100);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+.fa-head-side-cough{
+  color: rgb(118, 3, 28);
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+.fa-accessible-icon{
+  color: hsla(125, 100%, 50%,1)
+  /*tono de 0 a 360, saturacion,luminosidad,transparencia*/
+}
+
+@media(max-width:500px){
+  .adelante, .atras{
+    width: 70px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+  }
+.tarjeta-wrap{
+  width: 26%;
+  height: 54px;
+  margin: 0;
+padding: 0;
+}
+#card{
+  width: 40px;
+  font-size: 33px;
+  box-shadow: 0 0 0 3px #ACC21F,
+            0 0 0 5px #2EAAF4,
+            0 0 0 8px #F0A500;
+}
+#card:hover{
+  transform: scale(1.5)
+  
+}
+#iconMagic{
+  font-size: 30px;
+  bottom: 85%;
+  right: 40%;
+}
+#atr{
+  padding: 1px;
+  font-size: 16px;
+  width: 80px;
+height: 68px;
+position: absolute;
+bottom: 30px;
+right: -56px;
+
+}
+/* .atr, .atras, .adelante{ */
+  /* backface-visibility: hidden; */
+/* } */
+.adelante{
+  background: blue;
+}
+}
+@media(max-width: 730px){
+  .atras, .adelante:hover{
+ transform: translateY(-20px)
+ }
+ .adelante, .atras{
+  width: 60px;
+  height: 80px;
+}
+.tarjeta-wrap{
+  width: 28%;
+  height: 20px;
+}
+.tarjeta-wrap{
+  width: 11%;
+  height: 54px;
+}
+#iconMagic{
+  width: 25%;
+  font-size: 15px;
+  bottom: 75%;
+  right: 70%;
+}
+#atr{
+  padding: 1px;
+  font-size: 15px;
+  width: 70px;
+height: 63px;
+position: absolute;
+bottom: 20px;
+right: -47px;
+}
+#card{
+  width: 28px;
+  height: 20px;
+  font-size: 33px;
+  box-shadow: 0 0 0 3px #ACC21F,
+            0 0 0 5px #2EAAF4,
+            0 0 0 6px #F0A500;
+            
+}
+.fa-star{color:rgba(0, 0, 0, 0.679);font-size: 15px!important;}
+.adelante{
+  background: url(./img/azulChica1.jpg);
+}
+.tarjeta-wrap{
+  width: 50px;
+  height:50px;
+  perspective: 600; 
+  margin: 6px;
+  padding: 3px;
+}
+#card{
+  position: absolute;
+  bottom: 7px;
+  width: 61%;
+  height: 65%;
+  font-size: 45px;
+padding: 4px 2px;
+}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+.tablero{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height:100%;
+  
+  
+  justify-content: space-around;
+  border: 1px solid  black;
+  /*           x    y ,difuminado */
+  background: linear-gradient(45deg, #BADA55, #6D298D);
+                           /* direccion en grados,opcional*/
+  box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.693);/*color y transp*/
+  position: relative;
+  
+}
+
+@media(max-width:359){
+.tablero{
+  position: absolute;
+  width: 50%;
+display: block;
+
+}
+
+}
